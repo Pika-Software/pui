@@ -1,2 +1,2 @@
 # pui
-Pika UI
+Pika User Interface
