@@ -13,7 +13,7 @@ function PUI:RegisterVGUI(PANEL)
     PLib:Log("Pika UI", "Registered VGUI: ", PLib._C.cl, PANEL.Name)
 end
 
-function PUI:CreateSKIN(name, desc, base)
+function PUI:CreateSkin(name, desc, base)
     local SKIN = derma.GetNamedSkin(name) or {}
     SKIN.Base = base
 
@@ -21,4 +21,8 @@ function PUI:CreateSKIN(name, desc, base)
     PLib:Log("Pika UI", "Registered skin: ", PLib._C.cl, name)
 
     return SKIN
+end
+
+function PUI:GetCurrentSkin()
+    return hook.Run("PUI.GetCurrentSkin")
 end

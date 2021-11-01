@@ -6,6 +6,8 @@ local PANEL = {
     Description = "Basic label",
 }
 
-
+function PANEL:Init()
+    self:SetSkin( PUI:GetCurrentSkin() )
+end
 
 PUI:RegisterVGUI(PANEL)

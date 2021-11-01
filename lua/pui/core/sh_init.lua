@@ -3,6 +3,7 @@ local file = file
 local PLib = PLib
 
 PLib:CL("pui/core", "cl_vgui.lua")
+PLib:CL("pui/core", "cl_hooks.lua")
 PLib:CL("pui/core", "cl_concommand.lua")
 
 for _, fl in ipairs( file.Find("pui/skins/*.lua", "LUA") ) do

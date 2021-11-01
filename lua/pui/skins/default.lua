@@ -1,6 +1,6 @@
 local PUI = PUI
 
-local SKIN = PUI:CreateSKIN("PUI Default", "Pika UI defualt skin", "default")
+local SKIN = PUI:CreateSkin("PUI Default", "Pika UI defualt skin", "default")
 
 SKIN.PrintName                          = "Default"
 SKIN.Author                             = "Retro#1593"

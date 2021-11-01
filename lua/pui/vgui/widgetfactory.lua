@@ -1,3 +1,4 @@
+local IsValid = IsValid
 local PUI = PUI
 local PANEL = {
     Name = "WidgetFactory",
@@ -11,6 +12,8 @@ function PANEL:Init()
         PUI._WidgetFactoryPanel:Remove()
     end
     PUI._WidgetFactoryPanel = self
+
+    self:SetSkin( PUI:GetCurrentSkin() )
 
     self:SetSize(500, 500)
     self:Center()
